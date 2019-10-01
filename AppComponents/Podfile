@@ -1,0 +1,28 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
+inhibit_all_warnings!
+use_frameworks!
+
+workspace 'AppComponentsWorkspace'
+
+target 'AppComponents' do
+
+  pod 'UIView+Shimmer'
+
+  target 'AppComponentsTests' do
+
+    pod 'SnapshotTesting'
+    
+  end
+
+end
+
+target 'SampleApp' do
+
+  project 'SampleApp/SampleApp'
+
+  pod 'AppComponents', :path => './'
+
+end

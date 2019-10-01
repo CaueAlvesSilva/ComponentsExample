@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardComponent" customModule="AppComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btq-Db-bWT">
+                    <rect key="frame" x="16" y="16" width="313" height="21.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.99944216009999998" green="0.32318675520000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content: Lorem Ipsum is simply dummy text of the printing and typesetting industry." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6v-mh-o6H">
+                    <rect key="frame" x="16" y="45.666666666666657" width="343" height="38.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.077058352529999999" green="0.076505251230000001" blue="0.1819708347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOr-AW-beB">
+                    <rect key="frame" x="339" y="17" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="AKY-14-Plf"/>
+                        <constraint firstAttribute="height" constant="20" id="rVI-ZR-8AS"/>
+                    </constraints>
+                    <state key="normal" image="ic_favorite_off"/>
+                    <connections>
+                        <action selector="didTapFavoriteButton" destination="iN0-l3-epB" eventType="touchUpInside" id="alu-GA-o6S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w6v-mh-o6H" firstAttribute="leading" secondItem="Btq-Db-bWT" secondAttribute="leading" id="2sh-lH-8qI"/>
+                <constraint firstItem="w6v-mh-o6H" firstAttribute="trailing" secondItem="uOr-AW-beB" secondAttribute="trailing" id="Oy7-Pb-gk4"/>
+                <constraint firstItem="uOr-AW-beB" firstAttribute="centerY" secondItem="Btq-Db-bWT" secondAttribute="centerY" id="Smu-Om-Ex2"/>
+                <constraint firstItem="w6v-mh-o6H" firstAttribute="top" secondItem="Btq-Db-bWT" secondAttribute="bottom" constant="8" id="ZAy-1I-TyC"/>
+                <constraint firstItem="Btq-Db-bWT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="dnE-TP-27d"/>
+                <constraint firstItem="Btq-Db-bWT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="eks-uA-lmg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uOr-AW-beB" secondAttribute="trailing" constant="16" id="fRi-Mx-xgR"/>
+                <constraint firstItem="uOr-AW-beB" firstAttribute="leading" secondItem="Btq-Db-bWT" secondAttribute="trailing" constant="10" id="rjg-aF-vet"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="w6v-mh-o6H" secondAttribute="bottom" constant="16" id="uhE-nR-RMu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentLabel" destination="w6v-mh-o6H" id="ss9-Uc-DVD"/>
+                <outlet property="favoriteButton" destination="uOr-AW-beB" id="iHg-mm-3it"/>
+                <outlet property="titleLabel" destination="Btq-Db-bWT" id="FfU-Fk-ugW"/>
+            </connections>
+            <point key="canvasLocation" x="34.399999999999999" y="-217.98029556650246"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_favorite_off" width="16" height="16"/>
+    </resources>
+</document>

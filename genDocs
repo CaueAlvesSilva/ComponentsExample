@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo .
+echo =========================
+echo Running jazzy
+echo =========================
+echo .
+
+cd AppComponents/
+jazzy
+
+echo .
+echo =========================
+echo Synchronizing snapshots
+echo =========================
+echo .
+
+rsync -r AppComponentsTests/__Snapshots__/ docs/img
+
+echo .
+echo =========================
+echo Docs generated 🚀
+echo =========================
+echo .
+
+open docs/index.html

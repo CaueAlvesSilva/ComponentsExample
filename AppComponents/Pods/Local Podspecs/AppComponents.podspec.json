@@ -1,0 +1,35 @@
+{
+  "name": "AppComponents",
+  "version": "0.1.0",
+  "summary": "Components to be used in the App.",
+  "homepage": "YourRepoHomepage",
+  "authors": {
+    "YourName": "your@email.com"
+  },
+  "license": {
+    "type": "private"
+  },
+  "source": {
+    "git": "YourRepoURL",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "requires_arc": true,
+  "cocoapods_version": ">= 1.5",
+  "swift_versions": "5.0",
+  "source_files": "AppComponents/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "AppComponents": [
+      "AppComponents/**/*.xcassets",
+      "AppComponents/**/*.xib"
+    ]
+  },
+  "dependencies": {
+    "UIView+Shimmer": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

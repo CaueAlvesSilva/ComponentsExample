@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Component</string>
+	<key>Description</key>
+	<string>Component composed by an UIView class (with delegate, DTO and render) and a xib for interface.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the component to create</string>
+			<key>Identifier</key>
+			<string>componentName</string>
+			<key>Name</key>
+			<string>Component name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_componentName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_componentName:identifier___Component.swift</string>
+			<key>Description</key>
+			<string>UIView class name</string>
+			<key>Identifier</key>
+			<string>componentClassName</string>
+			<key>Name</key>
+			<string>Component UIView class name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_componentName:identifier___Component.xib</string>
+			<key>Description</key>
+			<string>Xib name</string>
+			<key>Identifier</key>
+			<string>componentXibName</string>
+			<key>Name</key>
+			<string>Component xib name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<string>9</string>
+	<key>Summary</key>
+	<string>Component composed by an UIView class (with delegate, DTO and render) and a xib for interface.</string>
+</dict>
+</plist>

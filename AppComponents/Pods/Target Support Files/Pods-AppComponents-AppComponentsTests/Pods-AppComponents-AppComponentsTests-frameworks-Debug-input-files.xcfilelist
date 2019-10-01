@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-AppComponents-AppComponentsTests/Pods-AppComponents-AppComponentsTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/UIView+Shimmer/UIView_Shimmer.framework
+${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework

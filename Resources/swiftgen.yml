@@ -1,0 +1,5 @@
+colors:
+  inputs: AppColors.clr
+  outputs:
+    templateName: swift4
+    output: ../AppComponents/AppComponents/AppColors.swift

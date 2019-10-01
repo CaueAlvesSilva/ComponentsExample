@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/CardComponent/CardComponent.swift",
+      "line": 12,
+      "symbol": "CardComponentDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/CardComponent/CardComponent.swift",
+      "line": 14,
+      "symbol": "CardComponentDelegate.cardComponentDidTapFavoriteButton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/CardComponent/CardComponent.swift",
+      "line": 43,
+      "symbol": "CardComponent.RenderType.build(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/CardComponent/CardComponent.swift",
+      "line": 44,
+      "symbol": "CardComponent.RenderType.loading(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/CardComponent/CardComponent.swift",
+      "line": 45,
+      "symbol": "CardComponent.RenderType.favorite(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/CardComponent/CardComponent.swift",
+      "line": 86,
+      "symbol": "CardComponent.DTO.init(title:content:isFavorite:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/u002567/Study/ComponentsExample/AppComponents/AppComponents/ComponentFromNib.swift",
+      "line": 13,
+      "symbol": "UIView.componentFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/u002567/Study/ComponentsExample/AppComponents"
+}

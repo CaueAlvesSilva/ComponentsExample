@@ -1,0 +1,59 @@
+#!/bin/bash
+
+#1 Sync XcodeTemplates
+
+rsync -r Resources/XcodeTemplates/ ~/Library/Developer/Xcode/Templates
+
+echo .
+echo ==================================================================
+echo Templates are ready to be used 🚀
+echo Files copied to ~/Library/Developer/Xcode/Templates
+echo ==================================================================
+echo .
+
+#2 Sync Colors file
+
+rsync -r Resources/AppColors.clr ~/Library/Colors/
+
+echo .
+echo ==================================================================
+echo AppColors are ready to be used in Interface Builder 🚀
+echo File copied to ~/Library/Colors
+echo ==================================================================
+echo .
+
+#3 Generate Colors swift file
+
+cd Resources
+swiftgen
+
+echo .
+echo ==================================================================
+echo AppColors are ready to be used in code 🚀
+echo "UIColor(named: .colorName)"
+echo ==================================================================
+echo .
+
+#4 AppComponents pod install
+
+cd ../AppComponents
+
+echo .
+echo ==================================================================
+echo AppComponents pod install 🚀
+echo ==================================================================
+echo .
+
+pod install
+
+#5 Main App pod install
+
+cd ../App
+
+echo .
+echo ==================================================================
+echo App pod install 🚀
+echo ==================================================================
+echo .
+
+pod install
